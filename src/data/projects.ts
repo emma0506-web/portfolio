@@ -100,7 +100,6 @@ export const projects: Project[] = [
     ],
     links: [
       { label: '查看在线 Demo', url: '/flow-grid/' },
-      { label: 'GitHub 源码', url: 'https://github.com/' },
     ],
   },
 ]
