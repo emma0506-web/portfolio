@@ -102,4 +102,27 @@ export const projects: Project[] = [
       { label: '查看在线 Demo', url: '/flow-grid/' },
     ],
   },
+  {
+    id: 'perf-playground',
+    name: 'perf-playground · 前端性能优化实验室',
+    role: '作者 / 开源维护',
+    period: '2026',
+    tags: ['React', 'TypeScript', '性能优化', 'Vite', '零后端'],
+    summary:
+      '把虚拟滚动、防抖/节流、图片懒加载等高频优化手段做成可交互、实时看数据的演示站，源自千万级金融前端首屏优化的实战沉淀。',
+    highlights: [
+      '虚拟列表：10 万条数据下对比全量渲染与虚拟滚动的 DOM 节点数与 FPS',
+      '防抖/节流实验室：同一输入框实时对比 raw / debounce / throttle 触发计数',
+      '图片懒加载：IntersectionObserver 懒加载 vs 全量加载，实时统计已加载数量',
+      '自研 useFps hook 基于 requestAnimationFrame 测实时帧率与掉帧',
+    ],
+    metrics: [
+      { label: '交互实验', value: '3 个' },
+      { label: '运行时依赖', value: '0' },
+      { label: '构建', value: 'Vite' },
+    ],
+    links: [
+      { label: '查看在线 Demo', url: '/perf-playground/' },
+    ],
+  },
 ]
