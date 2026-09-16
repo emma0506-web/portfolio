@@ -36,6 +36,22 @@ export default function Projects() {
                 <span className="tag tag--sm" key={t}>{t}</span>
               ))}
             </div>
+
+            {p.links && p.links.length > 0 && (
+              <div className="project__links">
+                {p.links.map((l) => (
+                  <a
+                    className="btn btn--ghost btn--sm"
+                    key={l.url}
+                    href={l.url}
+                    target={l.url.startsWith('http') ? '_blank' : undefined}
+                    rel={l.url.startsWith('http') ? 'noopener noreferrer' : undefined}
+                  >
+                    {l.label}
+                  </a>
+                ))}
+              </div>
+            )}
           </article>
         ))}
       </div>

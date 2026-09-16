@@ -3,6 +3,11 @@ export interface Metric {
   value: string
 }
 
+export interface ProjectLink {
+  label: string
+  url: string
+}
+
 export interface Project {
   id: string
   name: string
@@ -12,6 +17,7 @@ export interface Project {
   summary: string
   highlights: string[]
   metrics: Metric[]
+  links?: ProjectLink[]
 }
 
 export const projects: Project[] = [
@@ -71,6 +77,30 @@ export const projects: Project[] = [
     metrics: [
       { label: '动作节点', value: '10+' },
       { label: '交互链路', value: '端到端' },
+    ],
+  },
+  {
+    id: 'flow-grid',
+    name: 'flow-grid · 零依赖响应式瀑布流引擎',
+    role: '作者 / 开源维护',
+    period: '2026',
+    tags: ['TypeScript', '开源', '瀑布流', 'Vitest', '零依赖'],
+    summary:
+      '从工作中的瀑布流实战抽象出的通用布局引擎：纯函数核心算法 + 框架无关的 DOM 渲染器，支持响应式列数、等比缩放、最短列优先布局。',
+    highlights: [
+      '纯函数 computeLayout（最短列优先算法），框架无关、易测试',
+      '原生 DOM 渲染器 + ResizeObserver，容器宽度变化实时重排',
+      'Vitest 12 例单元测试全过，GitHub Actions 自动 test + build',
+      'README 含完整 API 文档与算法说明，可交互在线 Demo',
+    ],
+    metrics: [
+      { label: '运行时依赖', value: '0' },
+      { label: '单元测试', value: '12 例全过' },
+      { label: '产物', value: 'ESM+CJS+d.ts' },
+    ],
+    links: [
+      { label: '查看在线 Demo', url: '/flow-grid/' },
+      { label: 'GitHub 源码', url: 'https://github.com/' },
     ],
   },
 ]
