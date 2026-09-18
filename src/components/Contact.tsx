@@ -13,9 +13,13 @@ export default function Contact() {
           <span className="contact__label">电话 / 微信</span>
           <span className="contact__value">180-5245-3080</span>
         </div>
-        <a className="contact__item" href="https://github.com/" target="_blank" rel="noreferrer">
+        <a className="contact__item" href="https://github.com/emma0506-web" target="_blank" rel="noreferrer">
           <span className="contact__label">GitHub</span>
-          <span className="contact__value">github.com/（待填）</span>
+          <span className="contact__value">github.com/emma0506-web</span>
+        </a>
+        <a className="contact__item" href="https://emma0506-web.github.io/portfolio/" target="_blank" rel="noreferrer">
+          <span className="contact__label">作品站镜像</span>
+          <span className="contact__value">emma0506-web.github.io/portfolio</span>
         </a>
       </div>
 

@@ -100,6 +100,8 @@ export const projects: Project[] = [
     ],
     links: [
       { label: '查看在线 Demo', url: '/flow-grid/' },
+      { label: 'GitHub Pages', url: 'https://emma0506-web.github.io/flow-grid/' },
+      { label: '源码仓库', url: 'https://github.com/emma0506-web/flow-grid' },
     ],
   },
   {
@@ -123,6 +125,8 @@ export const projects: Project[] = [
     ],
     links: [
       { label: '查看在线 Demo', url: '/perf-playground/' },
+      { label: 'GitHub Pages', url: 'https://emma0506-web.github.io/perf-playground/' },
+      { label: '源码仓库', url: 'https://github.com/emma0506-web/perf-playground' },
     ],
   },
 ]
