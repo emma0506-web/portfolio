@@ -120,7 +120,7 @@ export const projects: Project[] = [
     ],
     metrics: [
       { label: '交互实验', value: '3 个' },
-      { label: '运行时依赖', value: '0' },
+      { label: '运行时依赖', value: 'React 18' },
       { label: '构建', value: 'Vite' },
     ],
     links: [
