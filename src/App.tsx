@@ -7,9 +7,11 @@ import Contact from './components/Contact'
 
 export default function App() {
   return (
-    <div className="app">
-      <Nav />
-      <main>
+    <>
+      <a href="#main" className="skip-link">跳到主内容</a>
+      <div className="app">
+        <Nav />
+        <main id="main">
         <Hero />
         <About />
         <Projects />
