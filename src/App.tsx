@@ -19,5 +19,6 @@ export default function App() {
         <Contact />
       </main>
     </div>
+    </>
   )
 }
